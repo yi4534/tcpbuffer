@@ -12,14 +12,13 @@
 package de.fkoeberle.tcpbuffer;
 
 public class Application {
-	public static void main(String... args) {
+	public static void main(String args[]) {
 		String guiString = System.getProperty("gui", Boolean.TRUE.toString());
-		boolean gui = Boolean.parseBoolean(guiString);
-		if (gui) {
-			ApplicationFrame.main(args);
-		} else {
+//		boolean gui = Boolean.parseBoolean(guiString);
+		boolean gui = true;
+
 			ConsoleApplication.main(args);
-		}
+
 	}
 
 }
